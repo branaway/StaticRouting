@@ -1,0 +1,17 @@
+Static Routing - a Module that Generate Java Source Code from the "routes" File
+
+Bing Ran (bing_ran@hotmail.com), 2010/10/1
+
+- Purpose:
+  1. To improve the performance of the basic HTTP request processing pipeline in the Play! Framework. 
+
+- Methodology
+  1. It generate Java source code that maps the routing rules in the conf/routes file of Play! applications to statically linked controller methods calls, thus eliminating any reflection-based action invocations.
+
+- Status
+  The code tha translates the rules to Java source files are working. It has not been packaged as a module yet. The initial benchmark has shown about 100% throughput performance gain for a simple hello world type application.
+
+
+
+  
+ 
